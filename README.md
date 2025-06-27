@@ -75,7 +75,6 @@ server.log.20250627.gz
 This will rotate `.log` files from `/var/log/apps` using today’s date.
 
 ### Full options explained in plain language:
-+---------------------+--------------------------------------------------------------------------+
 | Option              | What it does                                                             |
 |---------------------|--------------------------------------------------------------------------|
 | `-H`                | Use **date + time** like `20250627T12:30:00` in file name                |
@@ -84,7 +83,7 @@ This will rotate `.log` files from `/var/log/apps` using today’s date.
 | `-f "*.txt"`        | Rotate `.txt` files instead of `.log` files                              |
 | `-r 7`              | Delete rotated files that are older than **7 days**                      |
 | `-n`                | **Dry-run** mode — only show what would happen, don’t make any changes   |
-+---------------------+--------------------------------------------------------------------------+
+
 ---
 
 ## 💡 Examples
