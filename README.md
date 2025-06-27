@@ -69,7 +69,7 @@ server.log.20250627.gz
 ### Basic command
 
 ```bash
-./logrotate.sh -D
+./global-logrotate.sh -D
 ```
 
 This will rotate `.log` files from `/var/log/apps` using today’s date.
@@ -92,25 +92,25 @@ This will rotate `.log` files from `/var/log/apps` using today’s date.
 ### 1. Rotate today's `.log` files
 
 ```bash
-./logrotate.sh -D
+./global-logrotate.sh -D
 ```
 
 ### 2. Rotate `.txt` files in a different folder
 
 ```bash
-./logrotate.sh -p /tmp/logs -f "*.txt" -D
+./global-logrotate.sh -p /tmp/logs -f "*.txt" -D
 ```
 
 ### 3. Rotate logs and remove backups older than 5 days
 
 ```bash
-./logrotate.sh -r 5 -D
+./global-logrotate.sh -r 5 -D
 ```
 
 ### 4. Try it out safely (no changes will be made)
 
 ```bash
-./logrotate.sh -n -D
+./global-logrotate.sh -n -D
 ```
 
 ---
