@@ -91,7 +91,7 @@ This will rotate `.log` files from `/var/log/apps` using today’s date.
 ### 1. Rotate today's `.log` files
 
 ```bash
-./global-logrotate.sh -D
+./global-logrotate.sh -D 
 ```
 
 ### 2. Rotate `.txt` files in a different folder
